@@ -1,0 +1,16 @@
+.hero-img {
+  margin-top: 90px;
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.hero-txt {
+  position: absolute;
+  bottom: 350px;
+  right: 50px;
+  font-size: 5vh;
+  font-weight: 800;
+  color: whitesmoke;
+  background: rgba(27, 30, 4, 0.5);
+}
