@@ -34,7 +34,7 @@ const Slider = () => {
               alt={name}
               className={number === index ? `person-img-active` : `person-img`}
             />
-            <div className='name'>{name}</div>
+            <div className='main-name'>{name}</div>
           </div>
         );
       })}

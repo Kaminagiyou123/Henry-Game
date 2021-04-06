@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+.container {
+  padding-top: 90px;
+  width: 80vw;
+  height: 300 px;
+  overflow: hidden;
+  margin: auto;
+  color: whitesmoke;
+  background: rgba(27, 30, 4, 0.5);
+  border: white 10px solid;
+}
+h3 {
+  font-size: 5vh;
+  font-weight: 800;
+  background: whitesmoke;
+  color: rgba(27, 30, 4, 0.5);
+  padding: 5px;
+  text-align: center;
+}
+.info-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.text {
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "Handlee", cursive;
+}
+
+.text-active {
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: whitesmoke;
+  color: rgba(27, 30, 4, 1);
+  font-family: "Handlee", cursive;
+  font-size: larger;
+  border-radius: 2rem;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.personal-img-info {
+  width: 10vw;
+  height: 30vh;
+  object-fit: contain;
+}
+
+.name {
+  width: 30vw;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 4vh;
+  font-weight: 800;
+  border: 2px solid whitesmoke;
+  border-radius: 2rem;
+  padding-bottom: 4px;
+  text-align: center;
+}
+.btn {
+  border: 2px solid whitesmoke;
+  border-radius: 2rem;
+  background: rgba(27, 30, 4, 0.5);
+  color: whitesmoke;
+  font-family: "Handlee", cursive;
+}
