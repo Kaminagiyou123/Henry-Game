@@ -1,0 +1,8 @@
+.computerside-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  margin-left: 5vw;
+}

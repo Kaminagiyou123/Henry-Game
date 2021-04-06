@@ -1,0 +1,42 @@
+.myside-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  margin-left: 5vw;
+  overflow: hidden;
+}
+.myside-img-container {
+  height: 35vh;
+  width: 10vw;
+  padding-top: 20px;
+  background-color: #333;
+  border: 1px solid grey;
+  overflow: hidden;
+}
+.myside-img {
+  width: 100%;
+  height: 70%;
+  opacity: 0.5;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.myside-img:hover {
+  opacity: 1;
+}
+.myside-img-active {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.my-name {
+  font-size: large;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}

@@ -1,0 +1,45 @@
+.section-container {
+  position: absolute;
+  right: 2vw;
+  height: 35vh;
+  width: 10vw;
+  margin-top: 19vh;
+  background-color: rgb(205, 10, 42);
+  border: 1px solid grey;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-container-2 {
+  position: absolute;
+  right: 2vw;
+  height: 35vh;
+  width: 10vw;
+  margin-top: 62vh;
+  background-color: #333;
+  border: 1px solid grey;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.you-choose {
+  font-size: x-large;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.your-score {
+  font-size: large;
+  font-weight: 800;
+  color: white;
+
+  text-align: center;
+  padding: 20px;
+}
