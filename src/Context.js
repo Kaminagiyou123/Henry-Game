@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useReducer } from "react";
 import reducer from "./Reducer";
 
 const initialState = {
+  round: 0,
   yourChoice: "",
   henryChoice: "",
   yourScore: 0,
@@ -29,6 +30,9 @@ export const ProductsProvider = ({ children }) => {
 
   const youTie = () => {
     dispatch({ type: "YOU_TIE" });
+  };
+  const addRound = () => {
+    dispatch({ type: "ADD_ROUND" });
   };
 
   const winLoseTie = () => {
@@ -116,6 +120,7 @@ export const ProductsProvider = ({ children }) => {
         youPick,
         henryPick,
         winLoseTie,
+        addRound,
       }}
     >
       {children}

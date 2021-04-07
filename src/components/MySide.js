@@ -5,15 +5,16 @@ import { useProductsContext } from "../Context";
 
 const MySide = () => {
   const {
+    round,
     youPick,
     yourChoice,
-    henryChoice,
     henryPick,
     winLoseTie,
+    addRound,
   } = useProductsContext();
   useEffect(() => {
     winLoseTie();
-  }, [yourChoice, henryChoice]);
+  }, [round]);
   return (
     <div className='myside-container'>
       {People2?.map((person) => {
@@ -32,6 +33,7 @@ const MySide = () => {
               onClick={() => {
                 youPick(number);
                 henryPick();
+                addRound();
               }}
             />
           </div>

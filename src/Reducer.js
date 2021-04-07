@@ -17,6 +17,9 @@ const products_reducer = (state, action) => {
   if (action.type === "YOU_TIE") {
     return { ...state };
   }
+  if (action.type === "ADD_ROUND") {
+    return { ...state, round: state.round + 1 };
+  }
   throw new Error(`No Matching "${action.type}" - action type`);
 };
 
