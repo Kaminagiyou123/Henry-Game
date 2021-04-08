@@ -6,7 +6,7 @@ const Navbar = () => {
   const { setNewGame } = useProductsContext();
   return (
     <div className='navigation-bar'>
-      <ul>
+      <ul className='nav'>
         <li>
           <Link to='/history' className='navlink'>
             History
