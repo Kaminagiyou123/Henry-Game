@@ -1,13 +1,20 @@
 import React, { useContext, useEffect, useReducer } from "react";
 import reducer from "./Reducer";
-
+const getLocalRecord = () => {
+  let record = localStorage.getItem("record");
+  if (record) {
+    return JSON.parse(localStorage.getItem("record"));
+  } else {
+    return [];
+  }
+};
 const initialState = {
   round: 0,
   yourChoice: "",
   henryChoice: "",
   yourScore: 0,
   henryScore: 0,
-  record: {},
+  record: getLocalRecord(),
   msg: "",
 };
 
@@ -15,6 +22,9 @@ const ProductsContext = React.createContext();
 
 export const ProductsProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const saveRecord = () => {
+    dispatch({ type: "SAVE_RECORD" });
+  };
   const setMsg = () => {
     dispatch({ type: "MSG" });
   };
@@ -130,6 +140,7 @@ export const ProductsProvider = ({ children }) => {
         addRound,
         setMsg,
         setNewGame,
+        saveRecord,
       }}
     >
       {children}

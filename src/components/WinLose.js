@@ -10,18 +10,29 @@ const WinLose = () => {
     setMsg,
     msg,
     setNewGame,
+    saveRecord,
+    record,
   } = useProductsContext();
   const [hidden, setHidden] = useState(true);
 
   useEffect(() => {
     if (round > 9) {
       setHidden(false);
+
       setMsg();
     }
   }, [round]);
+
+  useEffect(() => {
+    localStorage.setItem("record", JSON.stringify(record));
+  }, [record]);
   const playAgain = () => {
     setHidden(true);
+    saveRecord();
     setNewGame();
+  };
+  const backHome = () => {
+    saveRecord();
   };
 
   return (
@@ -34,7 +45,7 @@ const WinLose = () => {
           Play Again
         </button>
 
-        <Link to='/' className='link-btn'>
+        <Link to='/' className='link-btn' onClick={backHome}>
           Back Home
         </Link>
       </div>

@@ -39,9 +39,17 @@ const products_reducer = (state, action) => {
       henryChoice: "",
       yourScore: 0,
       henryScore: 0,
-      record: {},
       msg: "",
     };
+  }
+
+  if (action.type === "SAVE_RECORD") {
+    const newRecord = {
+      you: state.yourScore,
+      henry: state.henryScore,
+      msg: state.msg,
+    };
+    return { ...state, record: [...state.record, newRecord] };
   }
   throw new Error(`No Matching "${action.type}" - action type`);
 };

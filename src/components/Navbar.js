@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useProductsContext } from "../Context";
 import "../ css/Navbar.css";
 const Navbar = () => {
+  const { setNewGame } = useProductsContext();
   return (
     <div className='navigation-bar'>
       <ul>
@@ -11,7 +13,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to='/game' className='navlink'>
+          <Link to='/game' className='navlink' onClick={setNewGame}>
             Play Game
           </Link>
         </li>

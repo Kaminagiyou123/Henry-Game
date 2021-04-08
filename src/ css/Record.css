@@ -1,0 +1,22 @@
+.record-info {
+  width: 50vw;
+  text-align: center;
+  margin: auto;
+  padding: 40px;
+  font-size: xx-large;
+}
+
+.record-container {
+  padding: 5px;
+}
+
+span {
+  color: whitesmoke;
+}
+.score2 {
+  color: red;
+}
+
+.result-box {
+  padding-top: 10px;
+}
