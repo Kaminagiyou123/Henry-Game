@@ -1,0 +1,49 @@
+.game-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 65vw;
+  height: 50vh;
+  background: white;
+  z-index: 1;
+  border-radius: 2rem;
+  left: 50%;
+  margin-top: -15vh;
+  margin-left: -45vw;
+  text-align: center;
+}
+.game-container-hidden {
+  display: none;
+}
+.winner-info-container {
+  padding: 5vh;
+  border: 1px, solid, black;
+}
+.game {
+  font-size: 5rem;
+  color: red;
+  padding: 5px;
+}
+.score {
+  font-size: 2rem;
+  padding: 3px;
+}
+.game-btn {
+  background-color: #333;
+  border: 1px solid grey;
+  color: white;
+  padding: 3px 5px 3px 5px;
+  width: 20vw;
+  height: 5vh;
+  margin: 2vh;
+  font-size: 3vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  border-radius: 2rem;
+}
+.link-btn {
+  font-size: 3vh;
+  text-decoration: none;
+  color: black;
+}

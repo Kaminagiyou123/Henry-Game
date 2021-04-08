@@ -8,12 +8,19 @@ const initialState = {
   yourScore: 0,
   henryScore: 0,
   record: {},
+  msg: "",
 };
 
 const ProductsContext = React.createContext();
 
 export const ProductsProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const setMsg = () => {
+    dispatch({ type: "MSG" });
+  };
+  const setNewGame = () => {
+    dispatch({ type: "NEW_GAME" });
+  };
   const youPick = (number) => {
     dispatch({ type: "YOU_PICK", payload: number });
   };
@@ -93,7 +100,7 @@ export const ProductsProvider = ({ children }) => {
       if (Number(state.henryChoice) === 4) {
         youWin();
       } else if (
-        Number(state.henryChoice) === 5 ||
+        Number(state.henryChoice) === 6 ||
         Number(state.henryChoice) === 0
       ) {
         youLose();
@@ -121,6 +128,8 @@ export const ProductsProvider = ({ children }) => {
         henryPick,
         winLoseTie,
         addRound,
+        setMsg,
+        setNewGame,
       }}
     >
       {children}
